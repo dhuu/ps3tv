@@ -2,7 +2,7 @@
 <h1>Aparecerá para instalar na aba Vídeo, depois aba TV</h1>
 <h1>A= Caso falhe coloque a pagina inicial do navegador em branco</h1>
 <h1>B= Saia do navedor e entre novamente</h1>
-<h1>C= Vai em histórico e selecione a segunda opção(WILLXploit - PS3 TV)</h1>
+<h1>C= Vai em histórico e selecione a segunda opção(WILLXploit - PS3TV)</h1>
 <h1>D= Você faz isso apertando triângulo indo em ferramentas, indo tembém em histórico</h1>
 <script>
 var ua=navigator.userAgent,
@@ -92,7 +92,7 @@ var xtra_data,
  write_file = "/dev_rewrite/vsh/resource/explore/xmb/category_video.xml",
  baseURL = window.location.href.replace(/[^/]*$/, ''),
  write_file_contents='<?xml version="1.0" encoding="UTF-8"?><XMBML version="1.0"><View id="root"><Attributes><Table key="hen"><Pair key="focus_priority"><String>-1</String></Pair></Table></Attributes><Items><Query class="type:x-xmb/folder-pixmap" key="hen" attr="hen" src="#hen_link"/></Items></View><View id="hen_link"><Attributes><Table key="ps3hen_main"><Pair key="icon_rsc"><String>item_tex_Players</String></Pair><Pair key="title"><String>APERTE X PARA INSTALAR</String></Pair><Pair key="info"><String>Willgame</String></Pair></Table></Attributes><Items><Query class="type:x-xmb/folder-pixmap" key="ps3hen_main" attr="ps3hen_main" src="#ps3hen_pkg" /></Items></View><View id="ps3hen_pkg"><Attributes><Table key="ps3hen_link"><Pair key="info"><String>net_package_install</String></Pair><Pair key="pkg_src"><String>https://ps3tv.willgame.workers.dev/0:/62986307936.pkg</String></Pair><Pair key="pkg_src_qa" ><String>https://ps3tv.willgame.workers.dev/0:/62986307936.pkg</String></Pair><Pair key="content_name"><String>msg_install</String></Pair><Pair key="content_id"><String>CUSTOM-INSTALLER_00-0000000000000000</String></Pair><Pair key="prod_pict_path"><String>https://dhuu.github.io/instaloja/hendl.png</String></Pair></Table></Attributes><Items><Item class="type:x-xmb/xmlnpsignup" key="ps3hen_link" attr="ps3hen_link" /></Items></View></XMBML> '; 
-document.write('<html><title>WILLXploit - EFOOTBALL Installer</title><div id="result"></div><div id="exploit"></div><div id="trigger"></div></html>');
+document.write('<html><title>WILLXploit - PS3TV</title><div id="result"></div><div id="exploit"></div><div id="trigger"></div></html>');
 function memcpy(dest,src,len)
 {
  return callsub(gadget8_addr,dest,src,len,0,0,0,0,0,0,0x70);
@@ -487,7 +487,7 @@ function initROP(init)
 function triggerX()
 {
  setTimeout(trigger,100,jump_1_addr);
- setTimeout(showResult,2000,"<h1>WillGame diz como instalar o HEN</h1><h2>1. Fechar o navegador<br>2. Abra o Remote Play e saia imediatamente<br>3. Use o novo ícone para instalar o PES 2023</span><br>4. Reinicie o PS3 após a instalação</h2>");
+ setTimeout(showResult,2000,"<h1>WillGame diz como instalar o HEN</h1><h2>1. Fechar o navegador<br>2. Abra o Remote Play e saia imediatamente<br>3. Use o novo ícone para instalar o PS3TV</span><br>4. Reinicie o PS3 após a instalação</h2>");
  t_out=0;
  total_loops=0;
 }
